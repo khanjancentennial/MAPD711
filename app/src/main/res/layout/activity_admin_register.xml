@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminRegister">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".AdminRegister">
+
+        <TextView
+            android:id="@+id/tvMainLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Registration"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/darkBlue"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/etRegFullNameAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_shape"
+            android:paddingLeft="20dp"
+            android:hint="Full Name"
+            android:layout_below="@id/tvMainLabel"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/etRegEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_shape"
+            android:paddingLeft="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/etRegFullNameAdmin"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/etRegPhoneNumberAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_shape"
+            android:paddingLeft="20dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_below="@id/etRegEmailAdmin"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/etRegAddressAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_shape"
+            android:paddingLeft="20dp"
+            android:hint="Address"
+            android:layout_below="@id/etRegPhoneNumberAdmin"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/etRegPasswordAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_shape"
+            android:paddingLeft="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/etRegAddressAdmin"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="Register"
+            android:layout_below="@id/etRegPasswordAdmin"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnAlreadyUserAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a user? Login"
+            android:layout_below="@id/btnRegisterAdmin"
+            android:layout_marginTop="20dp"
+
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

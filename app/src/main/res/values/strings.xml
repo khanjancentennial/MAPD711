@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Group3_MAPD711_Project</string>
+    <drawable name="product_card_background">@drawable/product_card_background</drawable>
+    <drawable name="button_background">@drawable/button_background</drawable>
+</resources>
